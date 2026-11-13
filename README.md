@@ -9,7 +9,11 @@ An open-source project from [Ataraxy Developers](https://github.com/AtaraxyDevel
 
 ## Quick start
 
-Requires Node.js 22 or 24 and npm. Git is optional if you download the source ZIP.
+Install [Node.js](https://nodejs.org/en/download) 22 or 24 (npm is included). Check
+`node --version` and `npm --version` in your terminal. The commands below run from
+this repository's root folder, the one containing `package.json`.
+
+**With Git:**
 
 ```sh
 git clone https://github.com/AtaraxyDevelopers/dev-setup-doctor.git
@@ -17,6 +21,15 @@ cd dev-setup-doctor
 npm ci
 npm test
 ```
+
+**Without Git:** choose **Code → Download ZIP** on GitHub, extract the archive,
+and open a terminal in the extracted `dev-setup-doctor-main` folder (release archives may
+include the version in the folder name). Run `npm ci` and `npm test` there.
+Use the **source-code ZIP**, not an npm `.tgz` package, to follow this developer walkthrough.
+The install step may need internet access; the examples run locally afterward.
+
+On Windows PowerShell, if `npm.ps1` is blocked by execution policy, use `npm.cmd`
+in place of `npm` in these commands. No execution-policy change is required.
 
 Run the included healthy configuration:
 
@@ -56,6 +69,10 @@ Avoid secrets in connection names and filenames because those labels are display
 
 Tests open temporary loopback sockets and verify occupied ports, unavailable
 services, configuration validation, CLI exit codes, and secret-safe output.
+
+## Expected first run
+
+The demo ends with `All configured checks passed.` The JSON command returns `"ok": true`. No files or settings are changed.
 
 ## Contributing and support
 

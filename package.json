@@ -1,6 +1,6 @@
 {
   "name": "@ataraxydevelopers/dev-setup-doctor",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "Diagnose project setup problems with actionable, secret-safe checks.",
   "type": "module",
   "engines": {
