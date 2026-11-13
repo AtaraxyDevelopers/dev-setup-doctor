@@ -1,0 +1,13 @@
+{
+  "nodeMajors": [22, 24],
+  "files": ["package.json", ".env"],
+  "env": ["DATABASE_URL"],
+  "ports": [3000],
+  "connections": [
+    {
+      "name": "PostgreSQL TCP listener",
+      "host": "127.0.0.1",
+      "port": 5432
+    }
+  ]
+}

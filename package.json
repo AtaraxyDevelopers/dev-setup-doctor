@@ -1,0 +1,32 @@
+{
+  "name": "@ataraxydevelopers/dev-setup-doctor",
+  "version": "0.1.0",
+  "description": "Diagnose project setup problems with actionable, secret-safe checks.",
+  "type": "module",
+  "engines": {
+    "node": ">=22"
+  },
+  "license": "MIT",
+  "author": "Ataraxy Developers",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/AtaraxyDevelopers/dev-setup-doctor.git"
+  },
+  "bugs": {
+    "url": "https://github.com/AtaraxyDevelopers/dev-setup-doctor/issues"
+  },
+  "scripts": {
+    "test": "node --test",
+    "start": "node src/cli.mjs",
+    "demo": "node src/cli.mjs --config examples/doctor.json"
+  },
+  "bin": {
+    "setup-doctor": "src/cli.mjs"
+  },
+  "files": [
+    "src",
+    "examples",
+    "README.md",
+    "LICENSE"
+  ]
+}
